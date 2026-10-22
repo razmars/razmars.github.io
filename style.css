@@ -37,11 +37,11 @@ strong { font-weight: 700; }
 .portrait img { position: absolute; width: 185%; max-width: none; height: auto; left: -85%; top: -100%; }
 h1, h2, h3 { color: var(--link); }
 h1 { font-size: 22px; line-height: 1.25; margin: 0 0 14px; letter-spacing: -.7px; }
-.role { margin-bottom: 5px; }
-.affiliation { font-size: 14px; margin-bottom: 12px; }
-.affiliation a { color: var(--text); }
-.email { font-size: 14px; overflow-wrap: anywhere; }
-.profile-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 18px; font-size: 14px; }
+.profile-links { display: flex; justify-content: center; gap: 2px; width: max-content; position: relative; left: 50%; transform: translateX(-50%); margin-top: 12px; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 40px; padding: 8px; border: 0; border-radius: 4px; background: transparent; color: var(--link); }
+.social-link svg { display: block; width: 21px; height: 21px; }
+.social-link:hover { color: var(--link-hover); background: var(--soft); text-decoration: none; }
+.social-link:disabled { opacity: .45; cursor: default; background: transparent; }
 main { min-width: 0; }
 section { margin-bottom: 27px; scroll-margin-top: 24px; }
 main > section + section {
@@ -87,7 +87,7 @@ footer { margin-top: 30px; color: var(--muted); font-size: 12px; }
   .profile { padding-top: 0; }
   .portrait { width: 128px; height: 128px; margin-bottom: 16px; }
   h1 { font-size: 23px; margin-bottom: 12px; }
-  .profile-links { margin-top: 15px; }
+  .profile-links { margin-top: 12px; }
 }
 @media (max-width: 440px) {
   .page { padding: 32px 20px; }
@@ -95,7 +95,9 @@ footer { margin-top: 30px; color: var(--muted); font-size: 12px; }
   .paper-figure { max-width: 220px; }
 }
 @media (pointer: coarse) {
-  .profile-links a, .paper-links a { min-height: 44px; display: inline-flex; align-items: center; }
+  .profile-links { gap: 0; }
+  .social-link { width: 44px; height: 44px; }
+  .paper-links a { min-height: 44px; display: inline-flex; align-items: center; }
   .paper-links a { padding: 6px 12px; }
   .citation summary { min-height: 44px; padding-block: 10px; }
 }
