@@ -32,9 +32,9 @@ strong { font-weight: 700; }
   max-width: 1100px; margin: 0 auto; padding: 52px 32px 36px;
 }
 .profile { text-align: center; padding-top: 3px; }
-.portrait { position: relative; width: 164px; height: 190px; margin: 0 auto 20px; overflow: hidden; border-radius: 6px; background: var(--soft); }
+.portrait { position: relative; width: 150px; height: 150px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; background: var(--soft); }
 /* Frame the supplied photograph around the face without modifying the image. */
-.portrait img { position: absolute; width: 185%; max-width: none; height: auto; left: -85%; top: -75%; }
+.portrait img { position: absolute; width: 185%; max-width: none; height: auto; left: -85%; top: -100%; }
 h1, h2, h3 { color: var(--link); }
 h1 { font-size: 22px; line-height: 1.25; margin: 0 0 14px; letter-spacing: -.7px; }
 .role { margin-bottom: 5px; }
@@ -85,7 +85,7 @@ footer { margin-top: 30px; color: var(--muted); font-size: 12px; }
 @media (max-width: 680px) {
   .page { grid-template-columns: 1fr; gap: 32px; max-width: 620px; padding: 32px 24px; }
   .profile { padding-top: 0; }
-  .portrait { width: 138px; height: 160px; margin-bottom: 16px; }
+  .portrait { width: 128px; height: 128px; margin-bottom: 16px; }
   h1 { font-size: 23px; margin-bottom: 12px; }
   .profile-links { margin-top: 15px; }
 }
