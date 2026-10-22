@@ -17,6 +17,3 @@ Social icons are from Font Awesome Free 6.7.2 by Fonticons, Inc., licensed
 under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 The original attribution is preserved in each inline SVG. See
 [Font Awesome licensing](https://fontawesome.com/license/free).
-
-The X icon is disabled until a profile URL is supplied. Replace its button with
-an anchor using the same `social-link` class and the verified profile URL.
