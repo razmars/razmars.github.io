@@ -70,7 +70,8 @@ h3 { margin: 0 0 9px; font-size: 16px; line-height: 1.45; }
 .paper-links a { display: inline-flex; align-items: center; font-size: 13px; text-decoration: underline; text-decoration-color: #b8c4d4; text-underline-offset: 4px; }
 .paper-links a:hover { text-decoration-color: var(--link); }
 
-.paper-figure { display: block; grid-column: 1; background: #fff; }
+.paper-figure { display: block; position: relative; grid-column: 1; background: #fff; }
+.figure-badge { position: absolute; top: 0; left: -4px; z-index: 1; padding: 3px 10px; border-radius: 2px; background: var(--link); color: #fff; font: 600 11px/1.4 Arial, Helvetica, sans-serif; box-shadow: 0 1px 3px #142d5026; }
 .paper-figure img { display: block; width: 100%; height: auto; }
 footer { margin-top: 30px; color: var(--muted); font-size: 12px; }
 @media (max-width: 820px) {
