@@ -5,32 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Raz Marshanski</title>
   <meta name="description" content="Raz Marshanski, researcher at Ben-Gurion University of the Negev. Generative models and Koopman operators for probabilistic time-series forecasting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <header>
-      <h1>Raz Marshanski</h1>
-      <p class="muted">Researcher, Ben-Gurion University of the Negev</p>
-    </header>
+    <section class="hero">
+      <!-- Replace with <img class="avatar" src="profile.jpg" alt="Raz Marshanski"> once the photo is added -->
+      <div class="avatar avatar-initials" aria-hidden="true">RM</div>
+      <div class="hero-text">
+        <h1>Raz Marshanski</h1>
+        <p class="role">Researcher · Ben-Gurion University of the Negev</p>
+        <p>
+          I'm a researcher at Ben-Gurion University of the Negev, working with Prof. Omri Azencot.
+          My research lies at the intersection of <strong>generative modeling</strong> and <strong>dynamical systems</strong>.
+          I use Koopman operator theory to build generative models that are both structured and fast.
+          My recent work, the Koopman Generative Operator (KGO, NeurIPS 2026), enables single-step
+          flow-matching generation for <strong>probabilistic time-series forecasting</strong>.
+        </p>
+        <ul class="links">
+          <li><a href="mailto:razmar@post.bgu.ac.il">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a></li>
+          <li><a href="https://github.com/razmars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a></li>
+        </ul>
+      </div>
+    </section>
 
-    <p>I work on generative models and Koopman operators for probabilistic time-series forecasting.</p>
+    <section>
+      <h2>Publications</h2>
 
-    <p class="links">
-      <a href="mailto:razmar@post.bgu.ac.il">email</a> ·
-      <a href="https://github.com/razmars">github</a>
-    </p>
-
-    <hr>
-
-    <h2>Publications</h2>
-
-    <article class="pub">
-      <p class="title">Koopman Generative Operators for Efficient Probabilistic Time-Series Forecasting</p>
-      <p class="muted"><strong>R. Marshanski</strong>, L. Nochumsohn, M. Jauhari, B. N. Oreshkin, O. Azencot</p>
-      <details>
-        <summary><em>NeurIPS 2026</em> · <a href="https://github.com/azencot-group/KGO">code</a> · <span class="link">bibtex</span></summary>
-        <pre>@inproceedings{marshanski2026kgo,
+      <article class="pub">
+        <img class="thumb" src="kgo.png" alt="KGO architecture overview">
+        <div>
+          <p class="pub-title">Koopman Generative Operators for Efficient Probabilistic Time-Series Forecasting</p>
+          <p class="authors"><strong>Raz Marshanski</strong>, Liran Nochumsohn, Mayank Jauhari, Boris N. Oreshkin, Omri Azencot</p>
+          <details>
+            <summary>
+              <span class="venue">NeurIPS 2026</span>
+              <a href="https://github.com/azencot-group/KGO">code</a>
+              <span class="toggle">bibtex</span>
+            </summary>
+            <pre>@inproceedings{marshanski2026kgo,
   title     = {Koopman Generative Operators for Efficient
                Probabilistic Time-Series Forecasting},
   author    = {Marshanski, Raz and Nochumsohn, Liran and Jauhari, Mayank
@@ -38,8 +56,12 @@
   booktitle = {Advances in Neural Information Processing Systems},
   year      = {2026}
 }</pre>
-      </details>
-    </article>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <footer>© 2026 Raz Marshanski</footer>
   </main>
 </body>
 </html>
