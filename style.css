@@ -105,5 +105,5 @@ footer { margin-top: 30px; color: var(--muted); font-size: 12px; }
 
 .figure-overlay { display: none; }
 .figure-overlay:target { display: flex; position: fixed; inset: 0; z-index: 10; padding: 64px 24px 24px; align-items: center; justify-content: center; background: rgba(255,255,255,.98); overflow: auto; }
-.figure-overlay img { width: 100%; height: auto; max-width: 1800px; }
+.figure-overlay img { width: 100%; height: auto; max-width: 1800px; max-height: calc(100dvh - 100px); object-fit: contain; }
 .figure-close { position: absolute; top: 20px; right: 24px; font-size: 16px; }
